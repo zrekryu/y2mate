@@ -12,7 +12,7 @@ setup(
     author="Zrekryu",
     author_email="zrekryu@gmail.com",
     url="https://github.com/zrekryu/y2mate",
-    keywords=["y2mate", "y2mate-api", "youtube"]
+    keywords=["y2mate", "y2mate-api", "youtube"],
     packages=find_packages(),
     install_requires=[
         "httpx"
