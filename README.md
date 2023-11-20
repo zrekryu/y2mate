@@ -1,4 +1,4 @@
-An unofficial Python API wrapper for Y2Mate.com
+An unofficial Python API wrapper for [Y2Mate.com](https://y2mate.com)
 
 ## Features
 
