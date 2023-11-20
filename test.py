@@ -1,18 +1,3 @@
-An unofficial Python API wrapper for [Y2Mate.com](https://y2mate.com)
-
-## Features
-
-- Fetch video metadata
-- Get download links for videos in different formats and qualities
-- Search for videos on Y2Mate
-
-## Installation
-```bash
-pip install y2mate
-```
-
-## Example
-```py
 import asyncio
 
 from y2mate import Y2MateClient
@@ -33,4 +18,3 @@ async def main() -> None:
     print(download_info)
 
 asyncio.run(main())
-```
