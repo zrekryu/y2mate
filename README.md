@@ -1,6 +1,4 @@
-# Y2Mate API Wrapper
-
-An unofficial Python API wrapper for Y2Mate.com, allowing you to interact with their services programmatically.
+An unofficial Python API wrapper for Y2Mate.com
 
 ## Features
 
