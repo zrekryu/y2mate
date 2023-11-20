@@ -24,7 +24,7 @@ async def main() -> None:
     search_result = await client.search("The Girl I Like Forgot Her Glasses OP")
     print(search_result)
     
-    # Get video metadata info from url
+    # Get video metadata from url
     video_metadata = await client.from_url("https://youtu.be/mpWnhkMLIu4?feature=shared")
     print(video_metadata)
     
