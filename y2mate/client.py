@@ -52,7 +52,7 @@ class Y2MateClient:
         response.raise_for_status()
         api_data = response.json()
         
-        if api_data["mess"]:
+        if api_data.get("mess"):
             raise Exception(api_data["mess"])
         
         return SearchResult(
@@ -87,7 +87,7 @@ class Y2MateClient:
         response.raise_for_status()
         api_data = response.json()
         
-        if api_data["mess"]:
+        if api_data.get("mess"):
             raise Exception(api_data["mess"])
         
         video_links = []
@@ -126,7 +126,7 @@ class Y2MateClient:
                     )
                 )
         
-        return VideoMetaapi_data(
+        return VideoMetadata(
             video_id=api_data["vid"],
             title=api_data["title"],
             video_links=video_links,
@@ -161,7 +161,7 @@ class Y2MateClient:
         response.raise_for_status()
         api_data = response.json()
         
-        if api_data["mess"]:
+        if api_data.get("mess"):
             raise Exception(api_data["mess"])
         
         return VideoDownloadInfo(
