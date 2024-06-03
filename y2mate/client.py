@@ -91,7 +91,7 @@ class Y2MateClient:
             raise Exception(api_data["mess"])
         
         video_links = []
-        for key in api_data["links"].get("mp4"):
+        for key in api_data["links"].get("mp4", []):
             info = api_data["links"]["mp4"][key]
             video_links.append(
                 LinkInfo(
@@ -103,7 +103,7 @@ class Y2MateClient:
                 )
         
         audio_links = []
-        for key in api_data["links"].get("mp3"):
+        for key in api_data["links"].get("mp3", []):
             info = api_data["links"]["mp3"][key]
             audio_links.append(
                 LinkInfo(
@@ -115,7 +115,7 @@ class Y2MateClient:
                 )
         
         other_links = []
-        for key in api_data["links"].get("other"):
+        for key in api_data["links"].get("other", []):
             info = api_data["links"]["other"][key]
             other_links.append(
                 LinkInfo(
